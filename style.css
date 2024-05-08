@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'NexaH';
+    src: url('media/fonts/Nexa-Heavy.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'NexaL';
+    src: url('media/fonts/Nexa-ExtraLight.ttf') format('truetype'); 
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'NexaL', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#blueD{
+    position: fixed;
+    top: -10%;
+    left: -30%;
+    width: 90%;
+    opacity: 0.1;
+    transform: rotate(200deg);
+    z-index: -1;
+}
+
+#blueD2{
+    position: fixed;
+    bottom: -10%;
+    right: -20%;
+    width: 100%;
+    opacity: 0.1;
+    transform: rotate(200deg);
+    z-index: -1;
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 30%;
+}
+
+.iconM{
+    display: none;
+}
+
+main{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+main p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+a{
+    width: 70vw;
+    height: 50px;
+    padding: 5px 5px 0 5px;
+    background-color: #1F0163;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+p b{
+    font-family: 'NexaH' , sans-serif;
+    color: #FF2A00;
+}
+
+a img{
+    width: 30%;
+}
+
+a h1{
+    font-family: 'NexaH', sans-serif;
+}
+
+.downow{
+    font-size: 1.3em;
+    font-family: 'NexaH', sans-serif;
+    color: #1F0163;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    #blueD, #blueD2{
+        display: none;
+    }
+    body{
+        height: 100vh;
+    }
+    header{
+        margin-bottom: 5%;
+    }
+    header img{
+        display: none;
+    }
+    .iconM{
+        display: block;
+        width: 20%;
+    }
+    main{
+        display: none;
+    }
+
+}
+
